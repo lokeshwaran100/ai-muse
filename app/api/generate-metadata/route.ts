@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
 import axios from "axios";
 
+export const dynamic = 'force-dynamic';
+
 interface MetadataResponse {
   tokenURI: string;
   metadata: {
