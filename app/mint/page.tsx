@@ -20,8 +20,6 @@ export default function MintPage() {
   const handleMint = async (e: React.FormEvent) => {
     e.preventDefault();
     
-    console.log("address", address);
-    console.log("provider", provider);
     if (!address || !provider) {
       toast.error("Please connect your wallet first");
       return;

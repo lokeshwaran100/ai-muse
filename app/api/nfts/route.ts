@@ -1,8 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getNFTsByOwner, saveNFT } from "@/lib/db";
 
-export const dynamic = 'force-dynamic';
-
 // GET /api/nfts?owner=0x...
 export async function GET(req: NextRequest): Promise<NextResponse> {
   try {
